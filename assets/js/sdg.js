@@ -1284,7 +1284,7 @@ var indicatorView = function (model, options) {
       var id = indicatorId.replace('indicator', '');
       $(el).append($('<a />').text('Download Headline CSV')
       .attr({
-        'href': 'https://ONSdigital.github.io/sdg-data/headline/' + id + '.csv',
+        'href': 'https://sustainabledevelopment-rwanda.github.io/sdg-data/headline/' + id + '.csv',
         'download': headlineId + '.csv',
         'title': 'Download headline data as CSV',
         'class': 'btn btn-primary btn-download',
@@ -1296,7 +1296,7 @@ var indicatorView = function (model, options) {
   this.createSourceButton = function(indicatorId, el) {
     $(el).append($('<a />').text('Download Source CSV')
     .attr({
-      'href': 'https://ONSdigital.github.io/sdg-data/data/' + indicatorId + '.csv',
+      'href': 'https://sustainabledevelopment-rwanda.github.io/sdg-data/data/' + indicatorId + '.csv',
       'download': indicatorId + '.csv',
       'title': 'Download source data as CSV',
       'class': 'btn btn-primary btn-download',
