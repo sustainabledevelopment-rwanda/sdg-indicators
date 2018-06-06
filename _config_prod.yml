@@ -40,7 +40,7 @@ email_contacts:
 # Github Repo for Data
 repo_name: sdg-data
 branch: develop
-org_name: ONSdigital
+org_name: Sustainable Development Rwanda
 
 # Build settings
 markdown: kramdown
@@ -51,8 +51,8 @@ exclude: [vendor, scripts, remotedata]
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: UK
-  adjective: UK
+  name: Rwanda
+  adjective: Rwandan
 
 # Pages
 collections:
