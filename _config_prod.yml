@@ -38,9 +38,9 @@ twitter: 'statisticsRW'
 
 ###################################################################################################
 email_contacts:
-  questions: sustainabledevelopment@example.com
-  suggestions: sustainabledevelopment@example.com
-  functional: sustainabledevelopment@example.com
+  questions: info@statistics.gov.rw
+  suggestions:info@statistics.gov.rw
+  functional:info@statistics.gov.rw
 ###################################################################################################
 
 # Github Repo for Data
@@ -78,20 +78,20 @@ languages:
   - en
 
 # Menu
- menu:
-   # Use these to customise the main navigation.
-   - path: /
-     translation_key: general.goals
-   - path: /reporting-status/
-     translation_key: menu.reporting_status
-   - path: /about/
-     translation_key: menu.about
-   - path: /publications/
-     translation_key: menu.publications
-   - path: /guidance/
-     translation_key: menu.guidance
-   - path: /faq/
-     translation_key: menu.faq
+menu:
+ # Use these to customise the main navigation.
+ - path: /
+   translation_key: general.goals
+ - path: /reporting-status/
+   translation_key: menu.reporting_status
+ - path: /about/
+   translation_key: menu.about
+ - path: /publications/
+   translation_key: menu.publications
+ - path: /guidance/
+   translation_key: menu.guidance
+ - path: /faq/
+   translation_key: menu.faq
 
 # This makes sure that all pages have a language.
 defaults:
