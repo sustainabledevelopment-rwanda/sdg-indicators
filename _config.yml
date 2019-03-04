@@ -114,18 +114,18 @@ map_options:
     accessToken: pk.eyJ1IjoiYnJvY2tmYW5uaW5nMSIsImEiOiJjaXplbmgzczgyMmRtMnZxbzlmbGJmdW9pIn0.LU-BYMX69uu3eGgk0Imibg
     attribution: <a href="https://www.mapbox.com">Mapbox</a> | <a href="http://geoportal.statistics.gov.uk/">ONS</a>
   noValueColor: #7c7c7c
-  minZoom: 5
+  minZoom: 8
 map_layers:
   #Province
-  - min_zoom: 5
-    max_zoom: 10
+  - min_zoom: 8
+    max_zoom: 9
     serviceUrl: https://opendata.arcgis.com/datasets/a2f04371b5094959a4e347eca29c63e2_0.geojson
     nameProperty: Prov_Name
     idProperty: Prov_ID
     staticBorders: true
     # link: http://geodata-nisr-rwanda.opendata.arcgis.com/datasets/province-boundary-2006?geometry=24.604%2C-2.908%2C35.058%2C-0.986
   #District
-  - min_zoom: 6
+  - min_zoom: 9
     max_zoom: 10
     serviceUrl: https://opendata.arcgis.com/datasets/b79afd0ddf334e91a5d041f2ba5dceae_0.geojson
     nameProperty: District
