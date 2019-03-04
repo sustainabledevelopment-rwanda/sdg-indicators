@@ -118,7 +118,7 @@ map_options:
 map_layers:
   #Province
   - min_zoom: 8
-    max_zoom: 9
+    max_zoom: 10
     serviceUrl: https://opendata.arcgis.com/datasets/a2f04371b5094959a4e347eca29c63e2_0.geojson
     nameProperty: Prov_Name
     idProperty: Prov_ID
