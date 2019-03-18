@@ -18,7 +18,7 @@
     minZoom: 5,
     maxZoom: 10,
     // Visual/choropleth considerations.
-    colorRange: chroma.brewer.BuGn,
+    colorRange: chroma.brewer.YlGnBu,
     noValueColor: '#f0f0f0',
     styleNormal: {
       weight: 1,
@@ -44,7 +44,7 @@
   // Defaults for each map layer.
   var mapLayerDefaults = {
     min_zoom: 0,
-    max_zoom: 20,
+    max_zoom: 10,
     serviceUrl: '[replace me]',
     nameProperty: '[replace me]',
     idProperty: '[replace me]',
@@ -236,8 +236,7 @@
 
       // Add the year slider.
       this.map.addControl(L.Control.yearSlider({
-        yearStart: this.years[0],
-        yearEnd: this.years[this.years.length - 1],
+        years: this.years,
         yearChangeCallback: function(e) {
           plugin.currentYear = new Date(e.time).getFullYear();
           plugin.updateColors();
@@ -312,7 +311,7 @@
         // The search plugin messes up zoomShowHide, so we have to reset that
         // with this hacky method. Is there a better way?
         var zoom = plugin.map.getZoom();
-        plugin.map.setZoom(zoom + 1);
+        plugin.map.setZoom(plugin.options.maxZoom);
         plugin.map.setZoom(zoom);
 
         // The list of handlers to apply to each feature on a GeoJson layer.
@@ -331,7 +330,7 @@
           else {
             plugin.selectionLegend.addSelection(layer);
             plugin.highlightFeature(layer);
-            plugin.zoomToFeature(layer);
+            // plugin.zoomToFeature(layer);
           }
         }
         // Event handler for mouseover.
@@ -404,8 +403,7 @@
       }
     });
   };
-})(jQuery, L, chroma, window, document);
-Chart.plugins.register({
+})(jQuery, L, chroma, window, document);Chart.plugins.register({
   id: 'rescaler',
   beforeInit: function (chart, options) {
     chart.config.data.allLabels = chart.config.data.labels.slice(0);
@@ -2261,8 +2259,7 @@ $(function() {
   var defaultOptions = {
     // YearSlider options.
     yearChangeCallback: null,
-    yearStart: 2000,
-    yearEnd: 2018,
+    years: [],
     // TimeDimensionControl options.
     timeSliderDragUpdate: true,
     speedSlider: false,
@@ -2270,7 +2267,7 @@ $(function() {
     // Player options.
     playerOptions: {
       transitionTime: 1000,
-      loop: false,
+      loop: true,
       startOver: true
     },
   };
@@ -2290,9 +2287,11 @@ $(function() {
     options = L.Util.extend(defaultOptions, options);
     // Hardcode the timeDimension to year intervals.
     options.timeDimension = new L.TimeDimension({
-      period: 'P1Y',
-      timeInterval: options.yearStart + '-01-02/' + options.yearEnd + '-01-02',
-      currentTime: new Date(options.yearStart + '-01-02').getTime(),
+      // We pad our years to at least January 2nd, so that timezone issues don't
+      // cause any problems. This converts the array of years into a comma-
+      // delimited string of YYYY-MM-DD dates.
+      times: options.years.join('-01-02,') + '-01-02',
+      currentTime: new Date(options.years[0] + '-01-02').getTime(),
     });
     // Create the player.
     options.player = new L.TimeDimension.Player(options.playerOptions, options.timeDimension);
