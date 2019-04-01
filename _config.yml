@@ -77,7 +77,6 @@ collections:
 languages:
   - en
 
-goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
 
 # Menu
 menu:
