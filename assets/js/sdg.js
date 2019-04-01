@@ -1851,7 +1851,7 @@ var indicatorSearch = function(inputElement, indicatorDataStore) {
 
     var results = [],
         that = this,
-        searchString = unescape(location.search.substring(1)).replace("q=", "");
+        searchString = unescape(location.search.substring(1));
 
     // we got here because of a redirect, so reinstate:
     this.inputElement.val(searchString);
