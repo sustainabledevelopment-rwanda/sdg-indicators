@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <head><script>var translations = {};</script>
+    <head>
+        <script>var translations = {};</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <!-- Basic Page Needs
         ================================================== -->
@@ -13,7 +14,6 @@
         <!-- Title and meta description
         ================================================== -->
         
-        
         <title>Rwanda Indicators For The Sustainable Development Goals</title>
         <meta name="description" content="">
         <meta property="og:description" content="">
@@ -21,6 +21,8 @@
         <meta name="robots" content="noindex, nofollow">
         
         <link rel="canonical" href="/">
+        
+        <meta name="google-site-verification" content="gbHNZIs8bcL1s_C8B5U42tVs6wfdnQmVv_51l_vYLC4" />
 
         
 
@@ -41,7 +43,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/default.css?v=20190401190001">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/default.css?v=20190401192613">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -52,7 +54,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"></head>
 <body class="language-en">
 <!-- <div class="container"> -->
-
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
   <div class="container">
@@ -82,24 +83,24 @@
       </ul>
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link active">
-            <a href="/sdg-indicators/">Goals</a>
+            <a href="/sdg-indicators/">general.goals</a>
           </li><li class="nav-link ">
-            <a href="/sdg-indicators/reporting-status/">Reporting Status</a>
+            <a href="/sdg-indicators/reporting-status/">menu.reporting_status</a>
           </li><li class="nav-link ">
-            <a href="/sdg-indicators/about/">About</a>
+            <a href="/sdg-indicators/about/">menu.about</a>
           </li><li class="nav-link ">
-            <a href="/sdg-indicators/publications/">Publications</a>
+            <a href="/sdg-indicators/publications/">menu.publications</a>
           </li><li class="nav-link ">
-            <a href="/sdg-indicators/guidance/">Guidance</a>
+            <a href="/sdg-indicators/guidance/">menu.guidance</a>
           </li><li class="nav-link ">
-            <a href="/sdg-indicators/faq/">FAQ</a>
+            <a href="/sdg-indicators/faq/">menu.faq</a>
           </li></ul>
 
       <div id="search" class="menu-target">
   <label for="indicator_search">
     <i class="fa fa-search" aria-hidden="true"></i><span>Search:</span>
   </label>
-  <input id="indicator_search" title="Indicator search" placeholder="Indicator search" data-url="/sdg-indicators/indicators.json" data-pageurl="/sdg-indicators/search/?" />
+  <input id="indicator_search" title="Indicator search" placeholder="Indicator search" data-url="/sdg-indicators/indicators.json" data-pageurl="/sdg-indicators/search/?q=" />
 </div>
 
 
@@ -110,130 +111,131 @@
 
 <div id="main-content" class="container goal-tiles" role="main">
 
+    
     <h1>Rwanda data for Sustainable Development Goal indicators</h1>
 
-    <p>Click on each goal <span style="display:none" id="jump-to-search"><a href="javascript:void(0)">, or search, </a></span> for Rwanda statistics for Sustainable Development Goal global indicators.</p><div class="row no-gutters">
+    <p>Click on each goal, or <span style="display:none" id="jump-to-search"><a href="javascript:void(0)"> search, </a></span> for Rwanda statistics for Sustainable Development Goal global indicators.</p><div class="row no-gutters">
             <div class="col-xs-4 col-md-2">
                 <a href="./no-poverty/">
-                  <img src="/sdg-indicators/assets/img/goals/en/1.png" id="goal-1" alt="No Poverty - Goal 1" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/1.png" id="goal-1" alt="No poverty - Goal 1" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./zero-hunger/">
-                  <img src="/sdg-indicators/assets/img/goals/en/2.png" id="goal-2" alt="Zero Hunger - Goal 2" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/2.png" id="goal-2" alt="Zero hunger - Goal 2" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./good-health-and-well-being/">
-                  <img src="/sdg-indicators/assets/img/goals/en/3.png" id="goal-3" alt="Good Health and Well-being - Goal 3" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/3.png" id="goal-3" alt="Good health and well-being - Goal 3" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./quality-education/">
-                  <img src="/sdg-indicators/assets/img/goals/en/4.png" id="goal-4" alt="Quality Education - Goal 4" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/4.png" id="goal-4" alt="Quality education - Goal 4" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./gender-equality/">
-                  <img src="/sdg-indicators/assets/img/goals/en/5.png" id="goal-5" alt="Gender Equality - Goal 5" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/5.png" id="goal-5" alt="Gender equality - Goal 5" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./clean-water-and-sanitation/">
-                  <img src="/sdg-indicators/assets/img/goals/en/6.png" id="goal-6" alt="Clean water and sanitation - Goal 6" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/6.png" id="goal-6" alt="Clean water and sanitation - Goal 6" />
               </a>
             </div>
         </div>
     <div class="row no-gutters">
             <div class="col-xs-4 col-md-2">
                 <a href="./affordable-and-clean-energy/">
-                  <img src="/sdg-indicators/assets/img/goals/en/7.png" id="goal-7" alt="Affordable and clean energy - Goal 7" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/7.png" id="goal-7" alt="Affordable and clean energy - Goal 7" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./decent-jobs-and-economic-growth/">
-                  <img src="/sdg-indicators/assets/img/goals/en/8.png" id="goal-8" alt="Decent jobs and economic growth - Goal 8" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/8.png" id="goal-8" alt="Decent jobs and economic growth - Goal 8" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./industry-innovation-and-infrastructure/">
-                  <img src="/sdg-indicators/assets/img/goals/en/9.png" id="goal-9" alt="Industry, innovation and infrastructure - Goal 9" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/9.png" id="goal-9" alt="Industry, innovation and infrastructure - Goal 9" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./reduced-inequalities/">
-                  <img src="/sdg-indicators/assets/img/goals/en/10.png" id="goal-10" alt="Reduced inequalities - Goal 10" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/10.png" id="goal-10" alt="Reduced inequalities - Goal 10" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./sustainable-cities-communities/">
-                  <img src="/sdg-indicators/assets/img/goals/en/11.png" id="goal-11" alt="Sustainable Cities & Communities - Goal 11" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/11.png" id="goal-11" alt="Sustainable cities & communities - Goal 11" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./responsible-consumption-and-production/">
-                  <img src="/sdg-indicators/assets/img/goals/en/12.png" id="goal-12" alt="Responsible consumption and production - Goal 12" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/12.png" id="goal-12" alt="Responsible consumption and production - Goal 12" />
               </a>
             </div>
         </div>
     <div class="row no-gutters">
             <div class="col-xs-4 col-md-2">
                 <a href="./climate-action/">
-                  <img src="/sdg-indicators/assets/img/goals/en/13.png" id="goal-13" alt="Climate action - Goal 13" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/13.png" id="goal-13" alt="Climate action - Goal 13" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./life-below-water/">
-                  <img src="/sdg-indicators/assets/img/goals/en/14.png" id="goal-14" alt="Life below water - Goal 14" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/14.png" id="goal-14" alt="Life below water - Goal 14" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./life-on-land/">
-                  <img src="/sdg-indicators/assets/img/goals/en/15.png" id="goal-15" alt="Life on land - Goal 15" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/15.png" id="goal-15" alt="Life on land - Goal 15" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./peace-and-justice-strong-institutions/">
-                  <img src="/sdg-indicators/assets/img/goals/en/16.png" id="goal-16" alt="Peace and justice - strong institutions - Goal 16" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/16.png" id="goal-16" alt="Peace and justice - strong institutions - Goal 16" />
               </a>
             </div>
         
     
             <div class="col-xs-4 col-md-2">
                 <a href="./partnerships-for-the-goals/">
-                  <img src="/sdg-indicators/assets/img/goals/en/17.png" id="goal-17" alt="Partnerships for the goals - Goal 17" />
+                  <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/17.png" id="goal-17" alt="Partnerships for the goals - Goal 17" />
               </a>
             </div>
         
     
         <div class="col-xs-4 col-md-2">
-            <img src="/sdg-indicators/assets/img/goals/en/18.png" id="goal-18" alt="The Global Goals for Sustainable Development" />
+            <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/18.png" id="goal-18" alt="The Global Goals for Sustainable Development" />
         </div>
     </div>
 </div>
@@ -290,7 +292,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 <script>
   var remoteDataBaseUrl = 'https://sustainabledevelopment-rwanda.github.io/sdg-data';
 </script>
-<script src='/sdg-indicators/assets/js/sdg.js?v=20190401190001'></script>
+<script src='/sdg-indicators/assets/js/sdg.js?v=20190401192613'></script>
 <script>
 $(function() {
     if($('#indicatorData').length) {
