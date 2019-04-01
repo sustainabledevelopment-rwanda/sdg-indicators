@@ -15,7 +15,7 @@ environment: staging
 remotedatabaseurl: "https://sustainabledevelopment-rwanda.github.io/sdg-data"
 # permalink: /news/:year/:month/:day/:title.html
 
-jekyll_get_data:
+jekyll_get_json:
   - data: meta
     json: 'https://sustainabledevelopment-rwanda.github.io/sdg-data/meta/all.json'
     # cache: true
@@ -32,7 +32,7 @@ jekyll_get_data:
 
 analytics:
   ga_prod: ''
-  
+
 # Social media accounts.
 twitter: 'statisticsRW'
 
@@ -105,6 +105,8 @@ defaults:
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-get-json
+  - jekyll-open-sdg-plugins
 
 remote_theme: open-sdg/open-sdg@0.4.0
 
