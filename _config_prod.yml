@@ -6,16 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Rwandan Indicators For The Sustainable Development Goals
-description: Data Platform Prototype
 baseurl: "" # the subpath of your site, e.g. /blog
-url: ""
-data_dir: data
 environment: production
 remotedatabaseurl: "https://sustainabledevelopment-rwanda.github.io/sdg-data-prod"
 # permalink: /news/:year/:month/:day/:title.html
 
-jekyll_get_data:
+jekyll_get_json:
   - data: meta
     json: 'https://sustainabledevelopment-rwanda.github.io/sdg-data-prod/meta/all.json'
     # cache: true
@@ -28,80 +24,7 @@ jekyll_get_data:
     json: 'https://sustainabledevelopment-rwanda.github.io/sdg-data-prod/meta/schema.json'
   - data: translations
     # Pin to version of the translation repository.
-    json: 'https://open-sdg.github.io/sdg-translations/translations-0.3.2.json'
+    json: 'https://open-sdg.github.io/sdg-translations/translations-0.4.0.json'
 
 analytics:
   ga_prod: ''
-  
-# Social media accounts.
-twitter: 'statisticsRW'
-
-###################################################################################################
-email_contacts:
-  questions: info@statistics.gov.rw
-  suggestions: info@statistics.gov.rw
-  functional: info@statistics.gov.rw
-###################################################################################################
-
-# Github Repo for Data
-repo_name: sdg-data
-branch: develop
-org_name: Sustainable Development Rwanda
-
-# Build settings
-markdown: kramdown
-
-# Travis Support
-exclude: [vendor, scripts, remotedata]
-
-# International Support
-# Eg name: Australia and adjective: Australian
-country:
-  name: Rwanda
-  adjective: Rwandan
-
-# Pages
-collections:
-  pages:
-    output: true
-    permalink: /:path/
-  posts:
-    output: true
-    permalink: /news/:year/:month/:day/:title.html
-  indicators:
-    output: true
-  goals:
-    output: true
-
-# The list of languages that are translated. The first one is the default.
-languages:
-  - en
-
-# Menu
-menu:
- # Use these to customise the main navigation.
- - path: /
-   translation_key: general.goals
- - path: /reporting-status/
-   translation_key: menu.reporting_status
- - path: /about/
-   translation_key: menu.about
- - path: /publications/
-   translation_key: menu.publications
- - path: /guidance/
-   translation_key: menu.guidance
- - path: /faq/
-   translation_key: menu.faq
-
-# This makes sure that all pages have a language.
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      language: "en"
-
-plugins:
-  - jekyll-remote-theme
-
-remote_theme: open-sdg/open-sdg@0.3.0
