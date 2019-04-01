@@ -28,7 +28,7 @@ jekyll_get_data:
     json: 'https://sustainabledevelopment-rwanda.github.io/sdg-data/meta/schema.json'
   - data: translations
     # Pin to version of the translation repository.
-    json: 'https://open-sdg.github.io/sdg-translations/translations-0.3.2.json'
+    json: 'https://open-sdg.github.io/sdg-translations/translations-0.4.0.json'
 
 analytics:
   ga_prod: ''
@@ -77,6 +77,8 @@ collections:
 languages:
   - en
 
+goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
+
 # Menu
 menu:
  # Use these to customise the main navigation.
@@ -104,7 +106,7 @@ defaults:
 plugins:
   - jekyll-remote-theme
 
-remote_theme: open-sdg/open-sdg@0.3.0
+remote_theme: open-sdg/open-sdg@0.4.0
 
 # Mapping
 map_options:
