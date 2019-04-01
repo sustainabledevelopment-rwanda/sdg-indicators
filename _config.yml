@@ -26,15 +26,21 @@ jekyll_get_data:
     # directory: 'remotedata'
   - data: schema
     json: 'https://sustainabledevelopment-rwanda.github.io/sdg-data/meta/schema.json'
+  - data: translations
+    # Pin to version of the translation repository.
+    json: 'https://open-sdg.github.io/sdg-translations/translations-0.4.0.json'
 
 analytics:
   ga_prod: ''
+  
+# Social media accounts.
+twitter: 'statisticsRW'
 
 ###################################################################################################
 email_contacts:
-  questions: rwanda@example.com
-  suggestions: rwanda@example.com
-  functional: rwanda@example.com
+  questions: info@statistics.gov.rw
+  suggestions: info@statistics.gov.rw
+  functional: info@statistics.gov.rw
 ###################################################################################################
 
 # Github Repo for Data
@@ -66,4 +72,65 @@ collections:
     output: true
   goals:
     output: true
-    
+
+# The list of languages that are translated. The first one is the default.
+languages:
+  - en
+
+goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
+
+# Menu
+menu:
+ # Use these to customise the main navigation.
+ - path: /
+   translation_key: general.goals
+ - path: /reporting-status/
+   translation_key: menu.reporting_status
+ - path: /about/
+   translation_key: menu.about
+ - path: /publications/
+   translation_key: menu.publications
+ - path: /guidance/
+   translation_key: menu.guidance
+ - path: /faq/
+   translation_key: menu.faq
+
+# This makes sure that all pages have a language.
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      language: "en"
+
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: open-sdg/open-sdg@0.4.0
+
+# Mapping
+map_options:
+  tileURL: https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}
+  tileOptions:
+    id: mapbox.light
+    accessToken: pk.eyJ1IjoiYnJvY2tmYW5uaW5nMSIsImEiOiJjaXplbmgzczgyMmRtMnZxbzlmbGJmdW9pIn0.LU-BYMX69uu3eGgk0Imibg
+    attribution: <a href="https://www.mapbox.com">Mapbox</a> | <a href="http://geoportal.statistics.gov.uk/">ONS</a>
+  noValueColor: #7c7c7c
+  minZoom: 8
+map_layers:
+  #Province
+  - min_zoom: 8
+    max_zoom: 10
+    serviceUrl: https://opendata.arcgis.com/datasets/a2f04371b5094959a4e347eca29c63e2_0.geojson
+    nameProperty: Prov_Name
+    idProperty: Prov_ID
+    staticBorders: true
+    # link: http://geodata-nisr-rwanda.opendata.arcgis.com/datasets/province-boundary-2006?geometry=24.604%2C-2.908%2C35.058%2C-0.986
+  #District
+  - min_zoom: 9
+    max_zoom: 10
+    serviceUrl: https://opendata.arcgis.com/datasets/b79afd0ddf334e91a5d041f2ba5dceae_0.geojson
+    nameProperty: District
+    idProperty: Dist_ID
+    staticBorders: false
+    # link: http://geodata-nisr-rwanda.opendata.arcgis.com/datasets/district-boundary-2006?geometry=24.711%2C-2.905%2C35.165%2C-0.983
