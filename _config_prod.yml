@@ -8,20 +8,20 @@
 # Site settings
 baseurl: "" # the subpath of your site, e.g. /blog
 environment: production
-remotedatabaseurl: "https://sustainabledevelopment-rwanda.github.io/sdg-data-prod"
+remotedatabaseurl: "https://sustainabledevelopment-ghana.github.io/sdg-data-prod"
 # permalink: /news/:year/:month/:day/:title.html
 
 jekyll_get_json:
   - data: meta
-    json: 'https://sustainabledevelopment-rwanda.github.io/sdg-data-prod/meta/all.json'
+    json: 'https://sustainabledevelopment-ghana.github.io/sdg-data-prod/meta/all.json'
     # cache: true
     # directory: 'remotedata'
   - data: headlines
-    json: 'https://sustainabledevelopment-rwanda.github.io/sdg-data-prod/headline/all.json'
+    json: 'https://sustainabledevelopment-ghana.github.io/sdg-data-prod/headline/all.json'
     # cache: true
     # directory: 'remotedata'
   - data: schema
-    json: 'https://sustainabledevelopment-rwanda.github.io/sdg-data-prod/meta/schema.json'
+    json: 'https://sustainabledevelopment-ghana.github.io/sdg-data-prod/meta/schema.json'
   - data: translations
     # Pin to version of the translation repository.
     json: 'https://open-sdg.github.io/sdg-translations/translations-0.4.0.json'
