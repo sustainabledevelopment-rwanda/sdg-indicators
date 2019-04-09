@@ -52,7 +52,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/default.css?v=20190409143625">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/default.css?v=20190409151258">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -121,7 +121,7 @@
 <script type="text/template" id="item_template">
   <% _.each(series, function(seriesItem) { %>
     <div class="variable-selector<% if(allowedFields.indexOf(seriesItem.field) == -1) { %> disallowed child<% }%>" data-field="<%=seriesItem.field%>">
-      <button class='accessBtn' tabindex='0'><h5><%=seriesItem.field%><i class="fa fa-chevron-down"></i></h5></button>
+      <button class='accessBtn' tabindex='0'><h5><%=translations.t(seriesItem.field)%><i class="fa fa-chevron-down"></i></h5></button>
       <div class="bar">
         <div class="selected"></div>
       </div>
@@ -131,11 +131,11 @@
           <button data-type="clear">Clear all</button>
         </div>
         <% _.each(seriesItem.values, function(item) { %>
-          <label><input type="checkbox" value="<%=item.value%>" data-field="<%=seriesItem.field%>" /><%=item.value%></label>
+          <label><input type="checkbox" value="<%=item.value%>" data-field="<%=seriesItem.field%>" /><%=translations.t(item.value)%></label>
         <% }); %>
       </div>
-      
-      <% if(allowedFields.indexOf(seriesItem.field) == -1) { %> 
+
+      <% if(allowedFields.indexOf(seriesItem.field) == -1) { %>
         <div class="variable-hint">Available when '<%= _.findWhere(edges, { To: seriesItem.field }).From %>' is selected
         </div>
         <div class="no-data-hint">
@@ -151,7 +151,7 @@
   <% if(units.length) { %>
     <h5>Units type</h5>
     <% _.each(units, function(unitsItem, index) { %>
-      <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <% if(!index) { %>checked="checked"<% } %> /> <%=unitsItem%></label>
+      <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <% if(!index) { %>checked="checked"<% } %> /> <%=translations.t(unitsItem)%></label>
     <% }); %>
   <% } %>
 </script>
@@ -163,13 +163,13 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2">
-        <a href="/sdg-indicators/quality-education" title="View this goal's indicator list">
+        <a href="/sdg-indicators/4" title="View this goal's indicator list">
           <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/4.png" alt="Quality education - Goal 4" />
         </a>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <a href="/sdg-indicators/quality-education">
+          <a href="/sdg-indicators/4">
             <span class="hidden-sm hidden-md hidden-lg">Goal 4: </span>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all
           </a>
         </h1>
@@ -183,7 +183,7 @@
   <ol class="breadcrumb">
   <li><a href="/sdg-indicators/">Home</a></li>
   
-      <li><a href="/sdg-indicators/quality-education" title="Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all">Goal 4</a></li>
+      <li><a href="/sdg-indicators/4" title="Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all">Goal 4</a></li>
       <li class="active">Indicator 4.5.1</li>
   
 </ol>
@@ -208,33 +208,35 @@
   data-charttitle="Parity indices" data-measurementunit="Indice" data-datasource="" data-geographicalarea="" data-footnote="" data-showdata="true" data-graphtype="line" data-geocoderegex="" data-showmap="false">
     
     <div class="col-md-3">
-      <div id="toolbar">
-        <span id="series-help">
-          <h4>Sub-categories</h4>
-          <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
-        </span>
-        <p>Click on the legend to remove individual lines from the chart.</p>
-        <div id="fields">
-          <p class="async-loading" data-img="/sdg-indicators/assets/img/loading-small.gif"></p>
+      <div id="chartControls" show="1">
+        <div id="toolbar">
+          <span id="series-help">
+            <h4>Sub-categories</h4>
+            <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+          </span>
+          <p>Click on the legend to remove individual lines from the chart.</p>
+          <div id="fields">
+            <p class="async-loading" data-img="/sdg-indicators/assets/img/loading-small.gif"></p>
+          </div>
         </div>
+        <div id="units"></div>
       </div>
-      <div id="units"></div>
     </div>
     <div class="col-md-9">
     
 
       
-       
- 
+      
+
 
 <div id="headlineTable">
-  
+
   <div id="datatables">
-    
+
     <a href="https://sustainabledevelopment-rwanda.github.io/sdg-data/headline/4-5-1.csv" class="btn btn-primary btn-download" download="indicator_4-5-1.csv" tabindex="0" role="button">Download Headline CSV</a>
-    
+
     <a href="https://sustainabledevelopment-rwanda.github.io/sdg-data/data/4-5-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_4-5-1.csv' tabindex='0' role='button'>Download Source CSV</a>
-    
+
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
       <caption></caption>
@@ -246,15 +248,16 @@
       </tbody>
     </table>
   </div>
-  
+
   <div id="datatableFooter">
     
     
     
     
   </div>
-  
+
 </div>
+
       
 
       <section>
@@ -264,13 +267,13 @@
         <div class="async-loaded" style="display:none">
           <ul class="nav nav-tabs data-view" role="tablist">
             <li role="presentation" class="nav-item active">
-              <a class="nav-link" data-toggle="tab" href="#chartview" aria-controls="chartview" role="tab">Chart</a>
+              <a class="nav-link" data-toggle="tab" href="#chartview" onClick='ga("send", "event", "Tab change", "Change data view", "Change to Chart tab")' aria-controls="chartview" role="tab" show-controls="1">Chart</a>
             </li>
             <li role="presentation" class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#tableview" aria-controls="tableview" role="tab">Table</a>
+              <a class="nav-link" data-toggle="tab" href="#tableview" onClick='ga("send", "event", "Tab change", "Change data view", "Change to Table tab")' aria-controls="tableview" role="tab" show-controls="1">Table</a>
             </li>
             <li role="presentation" class="nav-item map" style="display:none">
-              <a class="nav-link" data-toggle="tab" href="#mapview" aria-controls="mapview" role="tab">Map</a>
+              <a class="nav-link" data-toggle="tab" href="#mapview" onClick='ga("send", "event", "Tab change", "Change data view", "Change to Map tab")' aria-controls="mapview" role="tab" show-controls="0">Map</a>
             </li></ul>
 
           <!-- Tab panes -->
@@ -312,13 +315,13 @@
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="nav-item active">
-            <a class="nav-link" data-toggle="tab" href="#metadata" aria-controls="metadata" role="tab">National Metadata</a>
+            <a class="nav-link" data-toggle="tab" href="#metadata" onClick='ga("send", "event", "Tab change", "Change metadata view", "Change to National Metadata tab")' aria-controls="metadata" role="tab">National Metadata</a>
           </li>
           <li role="presentation" class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#globalmetadata" aria-controls="globalmetadata" role="tab">Global Metadata</a>
+            <a class="nav-link" data-toggle="tab" href="#globalmetadata" onClick='ga("send", "event", "Tab change", "Change metadata view", "Change to Global Metadata tab")' aria-controls="globalmetadata" role="tab">Global Metadata</a>
           </li>
           <li role="presentation" class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#sources" aria-controls="sources" role="tab">Sources</a>
+            <a class="nav-link" data-toggle="tab" href="#sources" onClick='ga("send", "event", "Tab change", "Change metadata view", "Change to Sources tab")' aria-controls="sources" role="tab">Sources</a>
           </li>
           
           <li role="presentation" class="nav-item">
@@ -1052,6 +1055,38 @@
   </div>
 </div>
 
+<style type="text/css">
+
+  #chartControls[show="1"]{display: block;}
+  #chartControls[show="0"]{display: none;}
+</style>
+
+<script>
+
+var SHOW_CONTROLS_ATTRIBUTE = "show-controls";
+var CHART_CONTROLS_ELEMENT_ID = "chartControls";
+
+addControlsVisibilityActionsToTabs();
+
+function addControlsVisibilityActionsToTabs(){
+	var tabs = document.querySelectorAll("[" + SHOW_CONTROLS_ATTRIBUTE + "]");
+	tabs.forEach(function(eachTab){
+		addControlsVisibilityClickEventToTab(eachTab);
+	});
+}
+
+function addControlsVisibilityClickEventToTab(tab){
+	tab.addEventListener("click", function(){
+		setControlsVisibility(tab.getAttribute(SHOW_CONTROLS_ATTRIBUTE));
+	});
+}
+
+function setControlsVisibility(visibility){
+  	document.querySelector("#" + CHART_CONTROLS_ELEMENT_ID).setAttribute("show", visibility);
+}
+
+</script>
+
 <footer role="contentinfo">
   <div class="container">
     <div class="row">
@@ -1074,16 +1109,6 @@
 <!-- <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA"></script> -->
 <!-- Google Analytics -->
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-
-
-</script>
-
 <!-- /.container </div> -->
 <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
@@ -1105,7 +1130,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 <script>
   var remoteDataBaseUrl = 'https://sustainabledevelopment-rwanda.github.io/sdg-data';
 </script>
-<script src='/sdg-indicators/assets/js/sdg.js?v=20190409143625'></script>
+<script src='/sdg-indicators/assets/js/sdg.js?v=20190409151258'></script>
 <script>
 $(function() {
     if($('#indicatorData').length) {
@@ -1160,7 +1185,9 @@ $(function() {
 });
 </script>
 
+
+
+
 </body>
 </html>
-
 
