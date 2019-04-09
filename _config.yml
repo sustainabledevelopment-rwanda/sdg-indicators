@@ -26,9 +26,11 @@ jekyll_get_json:
     # directory: 'remotedata'
   - data: schema
     json: 'https://sustainabledevelopment-rwanda.github.io/sdg-data/meta/schema.json'
+  - data: reporting
+    json: 'https://sustainabledevelopment-rwanda.github.io/sdg-data/stats/reporting.json'
   - data: translations
     # Pin to version of the translation repository.
-    json: 'https://open-sdg.github.io/sdg-translations/translations-0.4.0.json'
+    json: 'https://open-sdg.github.io/sdg-translations/translations-0.5.0.json'
 
 analytics:
   ga_prod: ''
@@ -108,7 +110,7 @@ plugins:
   - jekyll-get-json
   - jekyll-open-sdg-plugins
 
-remote_theme: open-sdg/open-sdg@0.4.0
+remote_theme: open-sdg/open-sdg@0.5.0
 
 # Mapping
 map_options:
