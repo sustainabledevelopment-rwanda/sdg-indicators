@@ -5,6 +5,7 @@
 {% include components/fields-template.html %}
 {% include components/units-template.html %}
 {% include multilingual-js.html key="indicator" %}
+{% include multilingual-js.html key="data" %}
 
 <div class="heading indicator goal-{{ goal_number }}">
   <div class="container">
@@ -37,12 +38,12 @@
 
   <div class="row">
     <div class="col-xs-12">
-      <h2>{{ meta.graph_title }}</h2>
+      <h2>{{ meta.graph_title | t }}</h2>
     </div>
   </div>
 
-  <div class="row" id="indicatorData" data-indicatorid='{{dataset_name}}' data-id="{{meta.indicator | slugify }}" data-country="{{ meta.national_geographical_coverage }}"
-  data-charttitle="{{ meta.graph_title }}" data-measurementunit="{{ meta.computation_units }}" data-datasource="{{ meta.source_organisation_1 }}" data-geographicalarea="{{ meta.national_geographical_coverage }}" data-footnote="{{ meta.data_footnote }}" data-showdata="{{ show_data }}" data-graphtype="{{ meta.graph_type }}" data-geocoderegex="{{ meta.data_geocode_regex }}" data-showmap="{{ meta.data_show_map }}">
+  <div class="row" id="indicatorData" data-indicatorid='{{dataset_name}}' data-id="{{meta.indicator | slugify }}" data-country="{{ meta.national_geographical_coverage | t }}"
+  data-charttitle="{{ meta.graph_title | t }}" data-measurementunit="{{ meta.computation_units | t }}" data-datasource="{{ meta.source_organisation_1 | t }}" data-geographicalarea="{{ meta.national_geographical_coverage | t }}" data-footnote="{{ meta.data_footnote | t }}" data-showdata="{{ show_data }}" data-graphtype="{{ meta.graph_type }}" data-geocoderegex="{{ meta.data_geocode_regex }}" data-showmap="{{ meta.data_show_map }}">
     {% if show_data %}
     <div class="col-md-3">
       <div id="chartControls" show="1">
@@ -115,7 +116,7 @@
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="nav-item active">
-            <a class="nav-link" data-toggle="tab" href="#metadata" onClick='ga("send", "event", "Tab change", "Change metadata view", "Change to National Metadata tab")' aria-controls="metadata" role="tab">{{ t.indicator.national_metadata }}</a>
+            <a class="nav-link" data-toggle="tab" href="#metadata" onClick='ga("send", "event", "Tab change", "Change metadata view", "Change to National Metadata tab")' aria-controls="metadata" role="tab">{{ site.non_global_metadata | default: 'indicator.national_metadata' | t }}</a>
           </li>
           <li role="presentation" class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#globalmetadata" onClick='ga("send", "event", "Tab change", "Change metadata view", "Change to Global Metadata tab")' aria-controls="globalmetadata" role="tab">{{ t.indicator.global_metadata }}</a>
