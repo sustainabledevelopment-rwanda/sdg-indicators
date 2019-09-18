@@ -1470,7 +1470,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-indicators/16-1-4",
-          "status": "notstarted"
+          "status": "complete"
         },{
           "id": "16-10-1",
           "title": "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months",
@@ -1484,7 +1484,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-indicators/16-6-2",
-          "status": "complete"
+          "status": "notstarted"
         },{
           "id": "16-4-1",
           "title": "Total value of inward and outward illicit financial flows (in current United States dollars)",
@@ -1498,7 +1498,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-indicators/16-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },{
           "id": "16-a-1",
           "title": "Existence of independent national human rights institutions in compliance with the Paris Principles",
@@ -1512,14 +1512,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-indicators/16-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },{
           "id": "16-3-2",
           "title": "Unsentenced detainees as a proportion of overall prison population",
           "description": "",
           "keywords": "",
           "href": "/sdg-indicators/16-3-2",
-          "status": "complete"
+          "status": "notstarted"
         },{
           "id": "16-3-1",
           "title": "Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms",
@@ -1575,7 +1575,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-indicators/16-2-2",
-          "status": "notstarted"
+          "status": "complete"
         },{
           "id": "16-4-2",
           "title": "Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments",
