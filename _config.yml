@@ -33,7 +33,7 @@ jekyll_get_json:
     json: 'https://open-sdg.github.io/sdg-translations/translations-0.5.0.json'
 
 analytics:
-  ga_prod: ''
+  ga_prod: 'UA-148903765-1'
 
 # Social media accounts.
 twitter: 'statisticsRW'
