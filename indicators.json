@@ -262,7 +262,7 @@
         },{
           "id": "3-2-2",
           "title": "Neonatal mortality rate",
-          "description": "",
+          "description": "The time reference of NMR is not the year in which the survey is undertaken; rather it is the five years’ period preceding the survey date. Hence, if an exact time point is needed as a time reference, it must be taken as the mid of the five-year interval preceding the survey date.",
           "keywords": "",
           "href": "/sdg-indicators/3-2-2",
           "status": "complete"
@@ -464,7 +464,7 @@
         },{
           "id": "4-1-1",
           "title": "Proportion of children and young people (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex",
-          "description": "Percentage of children and young people in Grade 2 or 3 of primary education, at the end of primary education and the end of lower secondary education achieving at least a minimum proficiency level in (a) reading and (b) mathematics. The minimum proficiency level will be measured relative to new common reading and mathematics scales currently in development",
+          "description": "The minimum proficiency level will be measured relative to new common reading and mathematics scales currently in development",
           "keywords": "",
           "href": "/sdg-indicators/4-1-1",
           "status": "complete"
