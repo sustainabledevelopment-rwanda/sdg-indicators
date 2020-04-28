@@ -921,10 +921,10 @@
         },{
           "id": "9-2-1",
           "title": "Manufacturing value added as a proportion of GDP and per capita",
-          "description": "",
+          "description": "The gross value added is defined as output minus intermediate consumption and equals the sum of employee compensation, gross operating surplus of government and corporations, gross mixed income of unincorporated enterprises and taxes less subsidies on production and imports, except for net taxes on products (System of National Accounts 2008). Manufacturing refers to industries belonging to the sector C defined by International Standard Industrial Classification of All Economic Activities (ISIC) Revision 4.",
           "keywords": "",
           "href": "/sdg-indicators/9-2-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },{
