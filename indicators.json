@@ -726,14 +726,14 @@
         },{
           "id": "8-6-1",
           "title": "Proportion of youth (aged 15–24 years) not in education, employment or training",
-          "description": "",
+          "description": "The share of youth not in employment, education or training (youth NEET rate) provides a measure of youth who are outside the educational system, not in training and not in employment, and thus serves as a broader measure of potential youth labour market entrants than youth unemployment. It includes discouraged worker youth as well as those who are outside the labour force due to disability and engagement in household chores, among other reasons. NEET is also a better measure of the current universe of potential youth labour market entrants as compared with the youth inactivity rate, as the latter includes those youth who are outside the labour force and are in education, and thus are furthering their skills and qualifications.",
           "keywords": "",
           "href": "/sdg-indicators/8-6-1",
           "status": "complete"
         },{
           "id": "8-9-1",
           "title": "Tourism direct GDP as a proportion of total GDP and in growth rate",
-          "description": "",
+          "description": "Internal tourism comprises domestic and inbound tourism. Domestic tourism comprises activities of a resident visitor within the country of reference either as part of a domestic tourism trip or part of outbound tourism trip. Inbound tourism comprise the activities of a non-resident visitor within the country of refernce.",
           "keywords": "",
           "href": "/sdg-indicators/8-9-1",
           "status": "notstarted"
@@ -796,7 +796,7 @@
         },{
           "id": "8-5-2",
           "title": "Unemployment rate, by sex, age and persons with disabilities",
-          "description": "",
+          "description": "Persons in unemployment are defined as all those of working age (usually persons aged 15 and above) who were not in employment, carried out activities to seek employment during a specified recent period and were currently available to take up employment given a job opportunity, where; (a) “not in employment” is assessed with respect to the short reference period for the measurement of employment; (b) to “seek employment” refers to any activity when carried out, during a specified recent period comprising the last four weeks or one month, for the purpose of finding a job or setting up a business or agricultural undertaking; (c) the point when the enterprise starts to exist should be used to distinguish between search activities aimed at setting up a business and the work activity itself, as evidenced by the enterprise’s registration to operate or by when financial resources become available, the necessary infrastructure or materials are in place or the first client or order is received, depending on the context; (d) “currently available” serves as a test of readiness to start a job in the present, assessed with respect to a short reference period comprising that used to measure employment (depending on national circumstances, the reference period may be extended to include a short subsequent period not exceeding two weeks in total, so as to ensure adequate coverage of unemployment situations among different population groups).",
           "keywords": "",
           "href": "/sdg-indicators/8-5-2",
           "status": "complete"
@@ -810,14 +810,14 @@
         },{
           "id": "8-7-1",
           "title": "Proportion and number of children aged 5–17 years engaged in child labour, by sex and age",
-          "description": "",
+          "description": "The term child labour refers to the subset of children’s activities that is injurious, negative or undesirable to children and that should be targeted for elimination. Child labour is a legal concept rather than a statistical one, and the international legal standards that define it are therefore the necessary frame of reference for child labour statistics. The three principal international conventions on child labour – ILO Convention No. 138 (Minimum Age) (C138), ILO Convention No. 182 (Worst Forms) (C182), and the United Nations Convention on the Rights of the Child (CRC), together set the legal boundaries for child labour, and provide the legal basis for national and international actions against it. In accordance with the Resolution, and on the basis of the production boundary set by the United Nations System of National Accounts (SNA), child labour is defined for measurement purposes to include all persons aged 5 to 17 years who are engaged in one or more of the following activities during a specified time period; (a) hazardous work (18th ICLS, paragraphs 21 to 32); (b) worst forms of child labour other than hazardous work (18th ICLS, paragraphs 33 to 34); and (c) employment below the minimum working age, excluding, where applicable, “light work”, performed by children aged not less than 12 or 13 years (18th ICLS, paragraphs 35 to 37). If, depending upon national policies and circumstances, the general production boundary rather than the SNA production boundary is used for measuring productive activities by children, child labour will include, in addition to these three categories, hazardous unpaid household services. For the sake of clarity, child labour estimated on this basis should be called “child labour (general production boundary basis)”. The measurement methodology used by the ILO in its global estimates on child labour, 1 building on the ICLS statistical definition, classifies child labour on the basis of the following criteria; (a) Ages 5 to 11; at least 1 hour of economic activity per week; (b) Ages 12 to 14; at least 14 hour of economic activity per week in all forms of economic activity except permissible “light” work, where light work is operationally defined as economic activity that (i) does not exceed 14 hours per week and that (ii) is not hazardous in nature; and (c) Ages 15 to 17; work in designated hazardous industries, or in designated hazardous occupations, or for long hours. Long hours are defined as 43 or more hours during the reference week.",
           "keywords": "",
           "href": "/sdg-indicators/8-7-1",
           "status": "complete"
         },{
           "id": "8-10-1",
           "title": "(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults",
-          "description": "",
+          "description": "The number of automated teller machines (ATMs) refers to the number of ATMs in the country for all types of financial institutions such as; commercial banks, non-deposit taking microfinance institutions, deposit taking micro finance institutions, credit union and financial cooperatives, among other. This information is reported every year by the Central Bank or the main financial regulator of the country.",
           "keywords": "",
           "href": "/sdg-indicators/8-10-1",
           "status": "notstarted"
