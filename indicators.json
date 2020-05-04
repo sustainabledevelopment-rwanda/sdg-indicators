@@ -1721,7 +1721,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-indicators/17-18-2",
-          "status": "notstarted"
+          "status": "complete"
         },{
           "id": "17-7-1",
           "title": "Total amount of approved funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies",
@@ -1767,21 +1767,21 @@
         },{
           "id": "17-4-1",
           "title": "Debt service as a proportion of exports of goods and services",
-          "description": "",
+          "description": "External debt service covered in this indicator refer only to public and publicly guaranteed debt.</p><p>The External Public debt service as a percentage of exports of goods and services is the sum of a country’s debt service on short and long-term public and publicly guaranteed debt and International Monetary Fund (IMF) repurchases and charges expressed as a percentage of that country’s exports of goods and services.</p><p>Public Debt service is the sum of principal repayments and interest payments actually paid on debt to non-residents.  Long-term refers to debt that has an original or extended maturity of more than one year.</p><p>IMF repurchases are total repayments of outstanding drawings from the general resources account during the year specified, excluding repayments due in the reserve tranche.</p><p>IMF charges cover interest payments with respect to all uses of IMF resources, excluding those resulting from drawings in the reserve tranche.</p>Exports of goods, services and net income are the sum of goods(merchandise) exports, exports of (nonfactor) services and income (factor) receipts from abroad excluding workers' remittances.",
           "keywords": "",
           "href": "/sdg-indicators/17-4-1",
           "status": "complete"
         },{
           "id": "17-19-2",
           "title": "Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration",
-          "description": "",
+          "description": "This indicator monitors if a country has conducted at least one population and housing census in the last 10 years and hence provides information on the availability of disaggregated population and housing data needed for the measurement of progress of the 2030 Agenda for Sustainable Development.",
           "keywords": "",
           "href": "/sdg-indicators/17-19-2",
           "status": "complete"
         },{
           "id": "17-1-2",
           "title": "Proportion of domestic budget funded by domestic taxes",
-          "description": "",
+          "description": "GFS; Government Finance Statistics. Tax burden; Revenue in the form of taxes as defined under government finance statistics (GFS) code 11 as a share of total revenue. In GFS, taxes are classified into six major categories; (i) taxes on income, profits, and capital gains; (ii) taxes on payroll and workforce; (iii) taxes on property; (iv) taxes on goods and services; (v) taxes on international trade and transactions; and (vi) other taxes. (Source; IMF, Government Finance Statistics Manual 2014 (GFSM 2014), Table 4A.1, assessed Dec 28 2015) Concepts Tax burden concept may be disaggregated into the complementary concepts of; 'direct taxes' or taxes that take into account individual circumstances of taxpayers (e.g., taxes on individual and corporate income), which can be calculated from the following detailed GFS revenue classifications; 111 Taxes on income, profits, and capital gains+1131 Recurrent taxes on immovable property+1132 Recurrent taxes on net wealth+1136 Other recurrent taxes on property; and 'indirect taxes' or taxes that do not take into account individual circumstances of taxpayers (e.g., taxes imposed on goods and services), which can be calculated from the following detailed GFS revenue classifications 112 Taxes on payroll and workforce+114 Taxes on goods and services+115 Taxes on international trade and transactions+116 Other taxes. Tax burden is directly related to the wider concept of fiscal burden, which can be derived from combining two GFSM 2014 revenue codes; code 11 Taxes plus code 12, Social Contributions or, alternatively 11+121+122. These concepts can also be found in the 2008 System of National Accounts (2008 SNA). The coverage, timing, and valuation of tax revenue in GFSM 2014 and the 2008 SNA are identical, but the classification systems differ. The 2008 SNA classifies taxes according to their role in economic activities'namely; (i) taxes on production and imports (D2); (ii) current taxes on income, wealth, etc. (D5); and (iii) capital taxes (D91). The result is that some categories of taxes in GFS need to be allocated between two of the SNA tax categories according to whether they are payable by producers or final consumers, or whether they are current or capital taxes. A detailed description of the linkages between the GFS and the 2008 SNA categories of taxes is provided in Appendix 7 of the GFSM 2014.",
           "keywords": "",
           "href": "/sdg-indicators/17-1-2",
           "status": "complete"
