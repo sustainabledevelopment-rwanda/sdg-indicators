@@ -141,7 +141,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/default.css?v=20200512223302">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/default.css?v=20200513223320">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -297,7 +297,12 @@ var translations = {
       
 
       <div id="page-content">
-  
+  <p>national_indicator_available: (a)	Gender Parity Index in primary level enrolment (b)	Gender Parity Index in Secondary level enrolment
+national_indicator_definition: Gender Parity Index (GPI) in primary/ secondary level enrolment is the ratio between the Gross Enrolment Ratio (GER) of girls and that of boys in primary education.
+national_indicator_description: Parity indices require data for the specific groups of interest. They represent the ratio of the indicator value for one group to that of the other. Typically, the likely more disadvantaged group is placed in the numerator. A value of exactly 1 indicates parity between the two groups.
+national_indicator_periodicity: Every  Three Years
+national_geographical_coverage: National
+national_computation_method: &lt;p&gt;The GPI is calculated by dividing the female GER by the male GER for primary/ Secondary education&lt;/p&gt;&lt;p&gt; To calculate the GER it is first necessary to determine the official school age population for each level of education&lt;/p&gt;&lt;p&gt;Then, the number of students enrolled in primary education is divided by the official school age population for primary education, and the result is multiplied by 100. GERs for boys and girls are calculated separately&lt;/p&gt;</p>
 
 </div>
 
@@ -316,7 +321,7 @@ var translations = {
   
 
   <div class="row" id="indicatorData" data-indicatorid='indicator_4-5-1' data-id="4-5-1" data-country=""
-  data-charttitle="Parity indices" data-measurementunit="Indice" data-datasource=""
+  data-charttitle="Parity indices" data-measurementunit="Indice" data-datasource="National Institute of Statistics of Rwanda"
   data-geographicalarea="" data-footnote="" data-showdata="true" data-graphtype="line"
   data-geocoderegex="" data-showmap="false" data-startvalues="">
     
@@ -626,8 +631,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data/commit/38eca501025c19456f1c4186f587cc530eb2fac7" target="_blank">
-                2019-04-23: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data/commit/e8652d65c6741fccecd8e70432e54dcd379cb8e5" target="_blank">
+                2020-05-13: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1001,7 +1006,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            
+            <p>National Institute of Statistics of Rwanda</p>
 
           
         </td>
@@ -1014,7 +1019,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Periodicity </th>
         <td>
           
-            <p>Three years</p>
+            <p>Every Three years</p>
 
           
         </td>
@@ -1040,7 +1045,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>Rwanda</p>
+            <p>National</p>
 
           
         </td>
@@ -1264,7 +1269,7 @@ data-event-label="Change to Sources tab"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/sdg-indicators/assets/js/sdg.js?v=20200512223302'></script><script>
+<script src='/sdg-indicators/assets/js/sdg.js?v=20200513223320'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
