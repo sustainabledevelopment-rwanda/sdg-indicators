@@ -141,7 +141,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/default.css?v=20200513223320">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/default.css?v=20200514223334">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -297,15 +297,7 @@ var translations = {
       
 
       <div id="page-content">
-  <p>national_indicator_available: &lt;p&gt;(a)	Literacy rate (%) of population aged 15-24 years, Literacy rate (%) of population aged 15+ years&lt;/p&gt;&lt;p&gt;Numeracy rate (%) of population aged 15-24 years, Numeracy rate (%) of population aged 15+ years&lt;/p&gt;
-national_indicator_definition: The proportion of youth (aged 15-24 years) and of adults (aged 15 years and above) have achieved or exceeded a given level of proficiency in (a) literacy and (b) numeracy. 
-national_indicator_description: &lt;p&gt;In EICV, Literacy is measured through a self-assessment question on whether the respondent can read and write a simple note. Numeracy is measured through a self-assessment question on the ability to perform a written calculation&lt;/p&gt;&lt;p&gt;Whereas for DHS, literacy rate refers to men and women who attended secondary school or higher and women who can read a whole sentence or part of a sentence&lt;/p&gt;
-national_indicator_periodicity: Every Three Years
-national_geographical_coverage: National 
-computation_units: Percentage (%)
-computation_disaggregation: &lt;p&gt;-	Geographical (National, Residence Urban/Rural, Province)&lt;/p&gt;&lt;p&gt;Sex&lt;/p&gt;&lt;p&gt;Quintile&lt;/p&gt;
-computation_calculations: Number of people in age group A who have achieved above the minimum level of literacy divide in year T by Population of age group A in year T</p>
-
+  
 
 </div>
 
@@ -324,7 +316,7 @@ computation_calculations: Number of people in age group A who have achieved abov
   
 
   <div class="row" id="indicatorData" data-indicatorid='indicator_4-6-1' data-id="4-6-1" data-country=""
-  data-charttitle="Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex" data-measurementunit="" data-datasource="National Insitute of Statistics of Rwanda"
+  data-charttitle="Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex" data-measurementunit="Percentage (%)" data-datasource="National Insitute of Statistics of Rwanda"
   data-geographicalarea="" data-footnote="" data-showdata="true" data-graphtype="line"
   data-geocoderegex="" data-showmap="" data-startvalues="">
     
@@ -604,7 +596,8 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator available </th>
         <td>
           
-            
+            <p>- Literacy rate (%) of population aged 15-24 years, Literacy rate (%) of population aged 15+ years</p>
+<p>- Numeracy rate (%) of population aged between 15 and 24 years, Numeracy rate (%) of population aged 15 years and above</p>
 
           
         </td>
@@ -617,7 +610,8 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            
+            <p>In EICV, Literacy is measured through a self-assessment question on whether the respondent can read and write a simple note. Numeracy is measured through a self-assessment question on the ability to perform a written calculation</p>
+<p>Whereas for DHS, literacy rate refers to men and women who attended secondary school or higher and women who can read a whole sentence or part of a sentence</p>
 
           
         </td>
@@ -643,7 +637,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Unit of measurement </th>
         <td>
           
-            
+            <p>Percentage (%)</p>
 
           
         </td>
@@ -669,7 +663,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Calculations </th>
         <td>
           
-            
+            <p>Number of people in age group A who have achieved above the minimum level of literacy divide in year T by Population of age group A in year T</p>
 
           
         </td>
@@ -726,8 +720,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data/commit/5abd67b89d525311b440fb71f4d681bc486284a5" target="_blank">
-                2020-05-13: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data/commit/5f32f792f89ea3e6aec5d1f78e4a0910ccc38ad6" target="_blank">
+                2020-05-14: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1613,7 +1607,7 @@ data-event-label="Change to Sources tab"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/sdg-indicators/assets/js/sdg.js?v=20200513223320'></script><script>
+<script src='/sdg-indicators/assets/js/sdg.js?v=20200514223334'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
